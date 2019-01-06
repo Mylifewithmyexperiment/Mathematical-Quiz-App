@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#33CCFF"
+
+android:scrollbars="none"
+tools:context="ca.blogspot.sjatyourservice.mathematicalquiz.MATH_QUIZ">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Start Quiz"
+        android:textColor="#0000CC"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:width="370px"
+        android:gravity="start"
+        android:layout_toRightOf="@+id/start"
+
+
+        android:layout_above="@+id/tv_Level"/>
+
+    <Button
+        android:id="@+id/over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP QUIZ"
+        android:textColor="#0000CC"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_Level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/start"
+        android:gravity="center"
+        android:text="Level"
+        android:textColor="@android:color/holo_red_dark"/>
+
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="95dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/score"
+        android:gravity="center"
+        android:text="TextViewddd"
+        android:width="55px"
+        android:height="220px"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:layout_alignParentStart="true"
+         />
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/answer1"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="Button1"
+            android:textColor="?attr/colorPrimary"/>
+        <Button
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="Button2"
+            android:textColor="?attr/colorPrimary"/>
+
+        <Button
+    android:id="@+id/answer3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/answer4"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentStart="true"
+    android:text="Button3"
+    android:textColor="?attr/colorPrimary"/>
+
+
+
+        <Button
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="25dp"
+            android:text="Button4"
+            android:textColor="?attr/colorPrimary"/>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5278704802151871/8116298716"
+            />
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
